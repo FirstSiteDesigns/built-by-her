@@ -5,20 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio — Built By Her</title>
 <meta name="description" content="Websites built by Built By Her across tradies, hospitality, beauty, marketing, fashion, and wellness industries.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --charcoal:#3A3832;--charcoal-hover:#2E2C28;
-  --mid:#6B6762;--light:#9B978F;--border:#E0DDD8;
-  --bg:#FAFAF8;--white:#FFFFFF;
-  --accent:#8C9E8A;--accent-light:#D6E0D4;--accent-dark:#5A7358;
-  --cream:#F5F3EF;--warm-section:#F0EDE8;
-  --font-display:'Cormorant Garamond',Georgia,serif;
-  --font-body:'Jost',system-ui,sans-serif;
+  --charcoal:#1A1A18;--charcoal-hover:#2E2C28;
+  --mid:#999690;--light:#9B978F;--border:rgba(0,0,0,0.08);
+  --bg:#F7F5F2;--white:#FFFFFF;
+  --accent:#6B7C5E;--accent-light:#D6E0D4;--accent-dark:#6B7C5E;
+  --cream:#EEECEA;--warm-section:#F0EDE8;
+  --off-white:#F7F5F2;
+  --font-display:'DM Serif Display',Georgia,serif;
+  --font-body:'Montserrat',system-ui,sans-serif;
 }
+h1,h2,h3,h4,h5,h6{font-weight:400;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--font-body);background:var(--bg);color:var(--charcoal);font-size:16px;line-height:1.7;font-weight:300;overflow-x:hidden;}
+body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--charcoal);font-size:16px;line-height:1.7;font-weight:300;overflow-x:hidden;}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(250,250,248,0.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 5vw;height:72px;display:flex;align-items:center;justify-content:space-between;}
 .nav-logo-wrap{display:flex;align-items:center;height:72px;text-decoration:none;}
 .nav-logo-light{height:44px;width:auto;display:none;}
@@ -36,7 +40,7 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
 /* Portfolio hero */
 .portfolio-hero{padding:140px 5vw 80px;text-align:center;background:var(--warm-section);border-bottom:1px solid var(--border);}
 .section-label{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent-dark);font-weight:500;margin-bottom:1rem;}
-.portfolio-hero h1{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4.5rem);font-weight:400;color:var(--charcoal);line-height:1.1;margin-bottom:1rem;}
+.portfolio-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:400;color:var(--charcoal);line-height:1.1;margin-bottom:1rem;}
 .portfolio-hero h1 em{font-style:italic;font-weight:300;color:var(--accent-dark);}
 .portfolio-hero p{font-size:1rem;color:var(--mid);font-weight:300;max-width:520px;margin:0 auto;line-height:1.75;}
 
@@ -44,7 +48,7 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
 .industry-section{padding:80px 5vw;border-bottom:1px solid var(--border);}
 .industry-section:nth-child(even){background:var(--warm-section);}
 .industry-header{margin-bottom:3rem;}
-.industry-header h2{font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:400;color:var(--charcoal);line-height:1.15;}
+.industry-header h2{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:400;color:var(--charcoal);line-height:1.15;}
 .industry-header h2 em{font-style:italic;font-weight:300;color:var(--accent-dark);}
 .industry-header p{font-size:0.88rem;color:var(--light);margin-top:0.5rem;font-weight:300;}
 
@@ -235,8 +239,8 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
 
 <section style="background:var(--charcoal);padding:80px 5vw;text-align:center;">
   <p class="section-label" style="color:var(--accent-light);">Ready?</p>
-  <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);color:var(--white);font-weight:400;margin-bottom:1rem;">Your business could be<br><em>next.</em></h2>
-  <p style="color:rgba(255,255,255,0.6);font-weight:300;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;">Live in 24 hours. From $797 AUD. Done for you, start to finish.</p>
+  <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3.5rem);color:var(--white);font-weight:400;margin-bottom:1rem;">Your business could be<br><em>next.</em></h2>
+  <p style="color:rgba(255,255,255,0.6);font-weight:300;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;">Live in 24 hours. From $650 AUD. Done for you, start to finish.</p>
   <a href="index.html#pricing" style="display:inline-block;background:var(--white);color:var(--charcoal);padding:1rem 2.5rem;text-decoration:none;font-size:0.82rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border:1px solid var(--white);">See the package &rarr;</a>
 </section>
 
