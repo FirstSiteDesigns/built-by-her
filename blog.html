@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Web Design for Small Businesses | Built By Her</title>
+<meta name="description" content="Practical guides on web design, pricing, hiring designers, and building a better online presence for your small business. Written by Built By Her.">
+<link rel="canonical" href="https://builtbyherdesigns.com/blog.html">
+<meta property="og:title" content="Blog — Web Design for Small Businesses | Built By Her">
+<meta property="og:description" content="Practical guides on web design, pricing, and building a better online presence for your small business.">
+<meta property="og:url" content="https://builtbyherdesigns.com/blog.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6 { font-weight: 400; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; background: #F7F5F2; color: #1A1A18; overflow-x: hidden; font-size: 16px; line-height: 1.6; }
+:root { --black: #0D0D0D; --charcoal: #1A1A18; --white: #F7F5F2; --mid: #888580; --dim: #504E4C; --tag: #999690; --border: rgba(247,245,242,0.1); --border-d: rgba(0,0,0,0.08); }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 68px; background: rgba(13,13,13,0.97); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+.nav-logo { height: 38px; width: auto; display: block; }
+.nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+.nav-links a { font-size: 9.5px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; color: rgba(247,245,242,0.55); transition: color 0.2s; }
+.nav-links a:hover { color: var(--white); }
+.nav-cta { border: 1px solid rgba(247,245,242,0.25) !important; padding: 9px 22px; color: var(--white) !important; }
+.nav-cta:hover { background: var(--white) !important; color: var(--black) !important; border-color: var(--white) !important; }
+.ham { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.ham span { display: block; width: 22px; height: 1.5px; background: var(--white); }
+
+.page-hero { background: var(--black); padding: 140px 48px 96px; }
+.page-hero-inner { max-width: 1200px; margin: 0 auto; }
+.page-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--tag); margin-bottom: 28px; display: block; }
+.page-h1 { font-family: 'DM Serif Display', serif; font-size: clamp(44px, 7vw, 96px); line-height: 0.95; letter-spacing: -0.025em; color: var(--white); }
+.page-h1 em { font-style: italic; color: rgba(247,245,242,0.3); display: block; }
+.page-sub { font-size: 14px; color: var(--mid); line-height: 1.8; font-weight: 300; margin-top: 32px; max-width: 480px; }
+
+.blog-list { max-width: 1200px; margin: 0 auto; padding: 80px 48px 120px; }
+
+.post-card { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: start; padding: 48px 0; border-top: 1px solid var(--border-d); text-decoration: none; transition: opacity 0.2s; }
+.post-card:hover { opacity: 0.7; }
+.post-card:last-child { border-bottom: 1px solid var(--border-d); }
+.card-tag { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--tag); margin-bottom: 14px; display: block; }
+.card-title { font-family: 'DM Serif Display', serif; font-size: clamp(22px, 2.8vw, 36px); color: var(--charcoal); line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 14px; }
+.card-title em { font-style: italic; color: #ABABAB; }
+.card-desc { font-size: 14px; color: #7A7874; line-height: 1.8; font-weight: 300; max-width: 580px; }
+.card-meta { font-size: 10px; color: var(--tag); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; white-space: nowrap; padding-top: 6px; }
+.card-arrow { font-size: 18px; color: var(--tag); margin-top: 2px; }
+
+.blog-cta { background: var(--black); padding: 96px 48px; text-align: center; }
+.blog-cta-inner { max-width: 640px; margin: 0 auto; }
+.blog-cta h2 { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 4vw, 52px); color: var(--white); margin-bottom: 20px; letter-spacing: -0.02em; }
+.blog-cta h2 em { font-style: italic; color: rgba(247,245,242,0.3); }
+.blog-cta p { font-size: 14px; color: var(--mid); margin-bottom: 36px; line-height: 1.8; font-weight: 300; }
+.btn { display: inline-block; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 16px 36px; transition: all 0.22s; }
+.btn-white { background: var(--white); color: var(--black); border: 1px solid var(--white); }
+.btn-white:hover { background: transparent; color: var(--white); }
+
+footer { background: var(--black); padding: 48px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 20px; }
+.footer-logo { height: 32px; width: auto; }
+.footer-copy { font-size: 11px; color: var(--dim); letter-spacing: 0.06em; }
+.footer-copy a { color: var(--dim); text-decoration: none; }
+.footer-copy a:hover { color: var(--white); }
+
+@media (max-width: 768px) {
+  nav { padding: 0 24px; } .nav-links { display: none; } .ham { display: flex; }
+  .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 68px; left: 0; right: 0; background: rgba(13,13,13,0.98); padding: 32px 24px; gap: 24px; border-bottom: 1px solid var(--border); }
+  .page-hero { padding: 120px 24px 72px; }
+  .blog-list { padding: 52px 24px 80px; }
+  .post-card { grid-template-columns: 1fr; gap: 16px; }
+  .card-meta { display: none; }
+  .blog-cta { padding: 72px 24px; }
+  footer { padding: 36px 24px; flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://builtbyherdesigns.com"><img src="4.png" alt="Built By Her — Web Design for Small Businesses" class="nav-logo"></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="https://builtbyherdesigns.com/#portfolio">Work</a></li>
+    <li><a href="https://builtbyherdesigns.com/#how">How It Works</a></li>
+    <li><a href="https://builtbyherdesigns.com/#pricing">Pricing</a></li>
+    <li><a href="https://builtbyherdesigns.com/blog.html">Blog</a></li>
+    <li><a href="https://builtbyherdesigns.com/#contact">Contact</a></li>
+    <li><a href="https://builtbyherdesigns.com/#cta" class="nav-cta">Get My Website</a></li>
+  </ul>
+  <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="page-eyebrow">Built By Her &nbsp;·&nbsp; Resources</span>
+    <h1 class="page-h1">
+      Straight answers on
+      <em>web design.</em>
+    </h1>
+    <p class="page-sub">Practical guides for small business owners navigating websites, pricing, and getting online without the agency runaround.</p>
+  </div>
+</section>
+
+<div class="blog-list">
+
+  <a href="https://builtbyherdesigns.com/blog/how-much-does-a-website-cost.html" class="post-card">
+    <div>
+      <span class="card-tag">Pricing &nbsp;·&nbsp; Web Design</span>
+      <h2 class="card-title">How Much Does a Website Cost for a Small Business <em>in 2025?</em></h2>
+      <p class="card-desc">A straight answer on what small business websites actually cost, from DIY builders to custom design, and what you get at each price point.</p>
+    </div>
+    <div>
+      <p class="card-meta">6 min read</p>
+      <p class="card-arrow">→</p>
+    </div>
+  </a>
+
+  <a href="https://builtbyherdesigns.com/blog/website-before-social-media.html" class="post-card">
+    <div>
+      <span class="card-tag">Strategy &nbsp;·&nbsp; Small Business</span>
+      <h2 class="card-title">Why Your Small Business Needs a Website <em>Before Social Media</em></h2>
+      <p class="card-desc">Instagram feels easier. But building your business on a platform you do not own is a risk most small businesses cannot afford.</p>
+    </div>
+    <div>
+      <p class="card-meta">5 min read</p>
+      <p class="card-arrow">→</p>
+    </div>
+  </a>
+
+  <a href="https://builtbyherdesigns.com/blog/what-to-look-for-hiring-web-designer.html" class="post-card">
+    <div>
+      <span class="card-tag">Hiring &nbsp;·&nbsp; Web Design</span>
+      <h2 class="card-title">What to Look for When <em>Hiring a Web Designer</em></h2>
+      <p class="card-desc">Not all web designers are the same. Here is what to actually check before you pay anyone to build your site, and the red flags worth walking away from.</p>
+    </div>
+    <div>
+      <p class="card-meta">6 min read</p>
+      <p class="card-arrow">→</p>
+    </div>
+  </a>
+
+  <a href="https://builtbyherdesigns.com/blog/how-long-does-a-website-take.html" class="post-card">
+    <div>
+      <span class="card-tag">Process &nbsp;·&nbsp; Web Design</span>
+      <h2 class="card-title">How Long Does It Take <em>to Get a Website Built?</em></h2>
+      <p class="card-desc">Most web designers take weeks. Some take months. Here is what actually drives the timeline and how to get your site live faster.</p>
+    </div>
+    <div>
+      <p class="card-meta">5 min read</p>
+      <p class="card-arrow">→</p>
+    </div>
+  </a>
+
+  <a href="https://builtbyherdesigns.com/blog/squarespace-vs-custom-website.html" class="post-card">
+    <div>
+      <span class="card-tag">Comparison &nbsp;·&nbsp; Web Design</span>
+      <h2 class="card-title">Squarespace vs a Custom Website: <em>What Small Businesses Actually Need</em></h2>
+      <p class="card-desc">An honest comparison of DIY website builders and custom design, including the real cost over three years that most people do not calculate.</p>
+    </div>
+    <div>
+      <p class="card-meta">7 min read</p>
+      <p class="card-arrow">→</p>
+    </div>
+  </a>
+
+  <a href="https://builtbyherdesigns.com/blog/signs-your-website-is-costing-you-customers.html" class="post-card">
+    <div>
+      <span class="card-tag">Strategy &nbsp;·&nbsp; Small Business</span>
+      <h2 class="card-title">5 Signs Your Website Is <em>Costing You Customers</em></h2>
+      <p class="card-desc">A bad website does not just fail to help your business. It actively works against it. Here are the five most common signs yours is doing that right now.</p>
+    </div>
+    <div>
+      <p class="card-meta">5 min read</p>
+      <p class="card-arrow">→</p>
+    </div>
+  </a>
+
+  <a href="https://builtbyherdesigns.com/blog/what-to-prepare-before-website-build.html" class="post-card">
+    <div>
+      <span class="card-tag">Process &nbsp;·&nbsp; Getting Started</span>
+      <h2 class="card-title">What to Prepare Before <em>Getting Your Website Built</em></h2>
+      <p class="card-desc">The more prepared you are before the brief, the faster your site gets built and the better it turns out. Here is exactly what to have ready.</p>
+    </div>
+    <div>
+      <p class="card-meta">5 min read</p>
+      <p class="card-arrow">→</p>
+    </div>
+  </a>
+
+  <a href="https://builtbyherdesigns.com/blog/do-i-need-a-blog-small-business-website.html" class="post-card">
+    <div>
+      <span class="card-tag">SEO &nbsp;·&nbsp; Strategy</span>
+      <h2 class="card-title">Do I Need a Blog on My <em>Small Business Website?</em></h2>
+      <p class="card-desc">A blog can be powerful for SEO and authority, but only if you will actually write it. Here is an honest answer on whether yours needs one.</p>
+    </div>
+    <div>
+      <p class="card-meta">5 min read</p>
+      <p class="card-arrow">→</p>
+    </div>
+  </a>
+
+</div>
+
+<section class="blog-cta">
+  <div class="blog-cta-inner">
+    <h2>Ready to get your site <em>sorted?</em></h2>
+    <p>Custom website, flat rate, preview in 24 hours. No agencies, no templates, no waiting weeks.</p>
+    <a href="https://builtbyherdesigns.com/#cta" class="btn btn-white">Get My Website</a>
+  </div>
+</section>
+
+<footer>
+  <img src="4.png" alt="Built By Her" class="footer-logo">
+  <p class="footer-copy">&copy; 2025 Built By Her &nbsp;·&nbsp; Custom Web Design for Small Businesses &nbsp;·&nbsp; Australian Made &nbsp;·&nbsp; <a href="https://www.instagram.com/builtbyher.designs/" target="_blank">@builtbyher.designs</a></p>
+</footer>
+<script>
+const ham = document.getElementById('ham');
+const nl = document.getElementById('nav-links');
+ham.addEventListener('click', () => nl.classList.toggle('open'));
+nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nl.classList.remove('open')));
+</script>
+</body>
+</html>
